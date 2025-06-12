@@ -23,10 +23,10 @@
     <!-- MENU LATERAL -->
     <left>
         <VBox fx:id="sideMenu" opacity="0.95" prefWidth="195.0" spacing="40.0" style="-fx-background-color: #f4f4f4; -fx-padding: 10;" translateX="-200.0">
-            <Button onAction="#onSearchFlight" text="Rechercher un vol" />
-            <Button onAction="#onMyBookings" text="Réservations" />
+            <Button onAction="#onSearchFlight" text="Flight Search" />
+            <Button onAction="#onMyBookings" text="Booked Flights" />
          <Button alignment="TOP_CENTER" onAction="#onProfile" prefHeight="26.0" prefWidth="86.0" text="Profil" />
-         <Button onAction="#onLogout" text="Déconnexion" />
+         <Button onAction="#onLogout" text="Log out" />
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin>

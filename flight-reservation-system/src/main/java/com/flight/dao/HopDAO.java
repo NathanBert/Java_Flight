@@ -154,13 +154,14 @@ public class HopDAO {
     }
 
     public void update(Hop hop) throws SQLException {
-        String sql = "UPDATE Hop SET depart_time = ?, arrival_time = ?, depart = ?, arrival = ? WHERE airplane_id = ?";
+        String sql = "UPDATE Hop SET depart_time = ?, arrival_time = ?, depart = ?, arrival = ?, airplane_id = ? WHERE hop_id = ?";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setTimestamp(1, hop.getDepartTime());
             stmt.setTimestamp(2, hop.getArrivalTime());
             stmt.setInt(3, hop.getDepart());
             stmt.setInt(4, hop.getArrive());
             stmt.setInt(5, hop.getAirplaneId());
+            stmt.setInt(6, hop.getHopId());
             stmt.executeUpdate();
         }
 

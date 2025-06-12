@@ -118,8 +118,26 @@ public class AdminDashboardController {
                 }
             };
 
+        SpinnerValueFactory<LocalTime> valueFactory2 =
+            new SpinnerValueFactory<LocalTime>() {
+                {
+                    setConverter(new LocalTimeStringConverter(DateTimeFormatter.ofPattern("HH:mm"), null));
+                    setValue(LocalTime.of(8, 0));
+                }
+
+                @Override
+                public void decrement(int steps) {
+                    setValue(getValue().minusMinutes(steps * 15));
+                }
+
+                @Override
+                public void increment(int steps) {
+                    setValue(getValue().plusMinutes(steps * 15));
+                }
+            };
+
         departSpinner.setValueFactory(valueFactory);
-        arrivalSpinner.setValueFactory(valueFactory);
+        arrivalSpinner.setValueFactory(valueFactory2);
             
         PriceSpinner.setValueFactory(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 10000, 100, 0.5));
 
@@ -265,7 +283,7 @@ public class AdminDashboardController {
         errorLabel.setStyle("-fx-text-fill: green;");
 
         setUpComboBoxes();
-        
+
         
     }
 

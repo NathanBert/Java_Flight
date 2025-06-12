@@ -4,6 +4,7 @@ com/flight/model/Airport.class
 com/flight/ui/controllers/DashboardController.class
 com/flight/model/Fare.class
 com/flight/service/SeatGenerationService.class
+com/flight/ui/controllers/AdminDashboardController$2.class
 com/flight/App.class
 com/flight/model/User.class
 com/flight/service/CreateTravellerService.class
