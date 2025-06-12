@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flight.ui.controllers.FlightItemController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="15.0" fill="#ff552100" height="150.0" layoutX="-133.0" layoutY="-77.0" stroke="#e12222" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" width="400.0" />
+            <Label fx:id="LabelCompany" layoutX="-3.0" layoutY="13.0" prefHeight="23.0" prefWidth="116.0" text="Rayan Airline">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="DepartureAirport" layoutX="6.0" layoutY="20.0" prefHeight="18.0" prefWidth="128.0" text="New York City" />
+            <Text layoutX="6.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure :" wrappingWidth="83.63000106811523" />
+            <Label fx:id="DepartureZIP" layoutX="86.0" layoutY="3.0" prefHeight="18.0" prefWidth="46.0" text="YMC" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Label fx:id="ArrivalAirport" alignment="CENTER_RIGHT" layoutX="-5.0" layoutY="20.0" prefHeight="18.0" prefWidth="133.0" text="Oslo Airport" textAlignment="RIGHT" />
+            <Text layoutX="43.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text=": Arrival" textAlignment="RIGHT" wrappingWidth="83.63000106811523" />
+            <Label fx:id="ArrivalZIP" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="4.0" prefHeight="18.0" prefWidth="58.0" text="ABA" textAlignment="RIGHT" />
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="DepartureHour" layoutX="3.0" layoutY="2.0" prefHeight="18.0" prefWidth="38.0" text="16:30" />
+            <Label fx:id="ArrivalHour" alignment="CENTER_RIGHT" layoutX="91.0" layoutY="2.0" prefHeight="18.0" prefWidth="38.0" text="17:30" textAlignment="RIGHT" />
+            <Label fx:id="DepartureDate" layoutX="3.0" layoutY="16.0" prefHeight="18.0" prefWidth="60.0" text="18/12/25">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label fx:id="ArrivalDate" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="15.0" prefHeight="18.0" prefWidth="39.0" text="29/08/28" textAlignment="RIGHT">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="54.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/avion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="detailButton" layoutX="75.0" layoutY="-5.0" mnemonicParsing="false" onAction="#OnReservationDetails" prefHeight="35.0" prefWidth="26.0" translateY="-4.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fleche.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Text layoutX="-3.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" />
+            <Label fx:id="PriceLabel" layoutX="41.0" layoutY="9.0" prefHeight="18.0" prefWidth="74.0" text="256.32€">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Text layoutX="74.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="stepovers" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Label fx:id="NumberOfStepovers" layoutX="63.0" layoutY="15.0" text="3" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Text layoutX="5.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat :" translateX="10.0" translateY="-20.0" />
+            <Label fx:id="SeatNumber" layoutX="48.0" layoutY="29.0" prefHeight="18.0" prefWidth="25.0" text="3B" translateX="10.0" translateY="-20.0">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Airline Company :" wrappingWidth="116.0">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

@@ -1,0 +1,77 @@
+.header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+  }
+  .button {
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+  }
+
+  
+
+
+
+
+
+.cancelButton:hover {
+
+    -fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #E51B23, #ffd3ec) !important;
+}
+
+.updateButton:hover {
+
+    -fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #39f6e6, #152c79) !important;
+}
+
+
+
+
+.backgroundColor {
+    -fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #3E5151, #DECBA4);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #E839F6, #61D8DE);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #E839F6, #61D8DE);
+}
+
+
+.whiteLabel
+{
+    -fx-text-fill: white !important;
+    -fx-font-size: 13px;  
+}
+
+  .text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4;
+    -fx-padding: 8;
+  }
+  
+  .text-field:focused {
+    -fx-border-color: #E839F6;
+  }
+  
+  .error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+  }
+
+  .topDashPanel {
+    -fx-background-color: #E51B23;
+    -fx-border-radius: 8;
+  }
+
+  .topAdminDashPanel {
+    -fx-background-color: #1b40e5;
+    -fx-border-radius: 8;
+  }
+
+  .transparentPanel {
+    -fx-background-color: transparent;
+    -fx-border-radius: 8;
+  }

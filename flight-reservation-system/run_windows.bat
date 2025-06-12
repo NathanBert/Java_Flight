@@ -1,0 +1,6 @@
+@echo off
+echo Running 'mvn clean install'...
+mvn clean install
+
+echo Running 'mvn compile exec:java'...
+mvn compile exec:java

@@ -1,0 +1,26 @@
+.create-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: #bdb2ca;
+  -fx-font-family: "Arial", sans-serif;
+  -fx-font-size: 17px;
+  -fx-font-weight: 500;
+  -fx-border-color: #bdb2ca;
+  -fx-border-radius: 6px;
+  -fx-background-radius: 6px;
+  -fx-border-width: 2px;
+  -fx-padding: 5 20 5 20;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(86,10,173,0.2), 5, 0.3, 0, 2);
+  -fx-transition: all 0.5s ease;
+}
+
+/* Hover effect */
+.create-button:hover {
+  -fx-background-color: #560bad;
+  -fx-text-fill: white;
+}
+
+/* Pressed effect */
+.create-button:pressed {
+  -fx-background-color: #3a0ca3;
+}

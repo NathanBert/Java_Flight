@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.flight.ui.controllers.DashboardController">
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding: 10;">
+            <Label fx:id="welcomeLabel" text="Bienvenue !" />
+        </HBox>
+    </top>
+
+  <left>
+    <VBox>
+      <Button text="Rechercher un vol" onAction="#showSearch"/>
+      <Button text="Mes réservations" onAction="#showReservations"/>
+      <Button text="Profil" onAction="#showProfile"/>
+      <Button text="Déconnexion" onAction="#logout"/>
+    </VBox>
+  </left>
+</BorderPane>
